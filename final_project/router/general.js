@@ -15,7 +15,7 @@ public_users.post("/register", (req, res) => {
     }
     else {
       users.push(obj);
-      res.send("you are logged in!!")
+      res.send("you are registered!!")
     }
   }
   else {

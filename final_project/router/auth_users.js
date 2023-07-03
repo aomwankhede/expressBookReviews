@@ -55,6 +55,7 @@ regd_users.put("/review/:isbn", (req, res) => {
         const user = arr.find(Obj => Obj.username === username);
         if (user) {
           user.review = req.body.review;
+          console.log(books[isbn].reviewers)
           res.json({ message: "modified" })
         }
         else {
